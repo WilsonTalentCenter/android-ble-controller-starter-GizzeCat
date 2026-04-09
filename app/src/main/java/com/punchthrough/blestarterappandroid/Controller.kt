@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.punchthrough.blestarterappandroid.ble.ConnectionManager
 import timber.log.Timber
 import java.util.UUID
+import kotlin.math.cos
+import kotlin.math.sin
 
 class Controller : AppCompatActivity() {
 

@@ -138,10 +138,10 @@
         android:src="@drawable/new_piskel_1_png__14_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615"
+        app:layout_constraintVertical_bias="0.663"
         />
 
     <ImageView
@@ -299,8 +299,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         />
-		
-	<com.punchthrough.blestarterappandroid.JoystickView
+
+    <com.punchthrough.blestarterappandroid.JoystickView
         android:id="@+id/joystick_custom"
         android:layout_width="312dp"
         android:layout_height="295dp"
@@ -309,10 +309,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="H,1:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_led_on"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.686"
         />
 
