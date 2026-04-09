@@ -33,7 +33,9 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
+import android.widget.MediaController
 import android.widget.Toast
+import android.widget.VideoView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.UiThread
 import androidx.appcompat.app.AppCompatActivity
@@ -53,7 +55,6 @@ class MainActivity : AppCompatActivity() {
     /*******************************************
      * Properties
      *******************************************/
-
     private lateinit var binding: ActivityMainBinding
 
     private val bluetoothAdapter: BluetoothAdapter by lazy {

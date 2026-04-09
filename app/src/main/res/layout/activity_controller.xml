@@ -10,14 +10,294 @@
     >
 
     <Button
-        android:id="@+id/button_led_on"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/idk"
+        android:layout_width="882dp"
+        android:layout_height="259dp"
         android:text="on"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        />
+
+    <Button
+        android:id="@+id/push"
+        android:layout_width="171dp"
+        android:layout_height="99dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hammer"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="500dp"
+        android:layout_height="54dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978"
+        />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="310dp"
+        android:layout_height="311dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803"
+        />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="110dp"
+        android:layout_height="370dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739"
+        />
+
+    <Button
+        android:id="@+id/foward"
+        android:layout_width="80dp"
+        android:layout_height="158dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709"
+        />
+
+    <Button
+        android:id="@+id/hammer"
+        android:layout_width="106dp"
+        android:layout_height="753dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34"
+        />
+
+    <Button
+        android:id="@+id/pull"
+        android:layout_width="302dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="8dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/push"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="655dp"
+        android:layout_height="95dp"
+        android:rotationY="0"
+        android:text="Enjoy Kaleb"
+        android:textSize="96sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"
+        />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968"
+        />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453"
+        />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53"
+        />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156"
+        />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615"
+        />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584"
+        />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099"
+        />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="219dp"
+        android:layout_height="295dp"
+        android:src="@drawable/new_piskel_1_png__14_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

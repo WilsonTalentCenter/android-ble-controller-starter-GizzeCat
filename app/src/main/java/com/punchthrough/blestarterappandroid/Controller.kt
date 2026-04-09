@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.MotionEvent
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.punchthrough.blestarterappandroid.R
 import com.punchthrough.blestarterappandroid.ble.ConnectionManager
 import timber.log.Timber
 import java.util.UUID
@@ -29,11 +28,110 @@ class Controller : AppCompatActivity() {
        // val btnLedOn = findViewById<Button>(R.id.button_led_on)
 
 
-        val btnControl = findViewById<Button>(R.id.button_led_on)
+        val btnControl = findViewById<Button>(R.id.idk)
         btnControl.setOnTouchListener { view, event ->
             when (event.action) {
                 MotionEvent.ACTION_DOWN -> {
                     sendToArduino("1")
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    sendToArduino("0")
+                    true
+                }
+                else -> false
+            }
+        }
+
+        val forward = findViewById<Button>(R.id.foward)
+        forward.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    sendToArduino("frw")
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    sendToArduino("0")
+                    true
+                }
+                else -> false
+            }
+        }
+        val backward = findViewById<Button>(R.id.back)
+        backward.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    sendToArduino("back")
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    sendToArduino("0")
+                    true
+                }
+                else -> false
+            }
+        }
+        val left = findViewById<Button>(R.id.left)
+        left.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    sendToArduino("left")
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    sendToArduino("0")
+                    true
+                }
+                else -> false
+            }
+        }
+        val right = findViewById<Button>(R.id.right)
+        right.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    sendToArduino("right")
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    sendToArduino("0")
+                    true
+                }
+                else -> false
+            }
+        }
+        val push = findViewById<Button>(R.id.push)
+        push.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    sendToArduino("push")
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    sendToArduino("0")
+                    true
+                }
+                else -> false
+            }
+        }
+        val pull = findViewById<Button>(R.id.pull)
+        pull.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    sendToArduino("pull")
+                    true
+                }
+                MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
+                    sendToArduino("0")
+                    true
+                }
+                else -> false
+            }
+        }
+        val hammer = findViewById<Button>(R.id.hammer)
+        hammer.setOnTouchListener { view, event ->
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    sendToArduino("ham")
                     true
                 }
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
