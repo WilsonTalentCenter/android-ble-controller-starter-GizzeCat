@@ -34,7 +34,7 @@ class Controller : AppCompatActivity() {
         btnControl.setOnTouchListener { view, event ->
             when (event.action) {
                 MotionEvent.ACTION_DOWN -> {
-                    sendToArduino("1")
+                    sendToArduino("E")
                     true
                 }
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
@@ -53,7 +53,7 @@ class Controller : AppCompatActivity() {
                     true
                 }
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                    sendToArduino("0")
+                    sendToArduino("0frw")
                     true
                 }
                 else -> false
@@ -67,7 +67,7 @@ class Controller : AppCompatActivity() {
                     true
                 }
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                    sendToArduino("0")
+                    sendToArduino("0back")
                     true
                 }
                 else -> false
@@ -81,7 +81,7 @@ class Controller : AppCompatActivity() {
                     true
                 }
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                    sendToArduino("0")
+                    sendToArduino("0left")
                     true
                 }
                 else -> false
@@ -95,7 +95,7 @@ class Controller : AppCompatActivity() {
                     true
                 }
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                    sendToArduino("0")
+                    sendToArduino("0right")
                     true
                 }
                 else -> false
@@ -109,7 +109,7 @@ class Controller : AppCompatActivity() {
                     true
                 }
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                    sendToArduino("0")
+                    sendToArduino("0push")
                     true
                 }
                 else -> false
@@ -123,7 +123,7 @@ class Controller : AppCompatActivity() {
                     true
                 }
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
-                    sendToArduino("0")
+                    sendToArduino("0pull")
                     true
                 }
                 else -> false
@@ -155,11 +155,12 @@ class Controller : AppCompatActivity() {
         val ny = -sin(rad) * strength / 100.0
         val bx = ((nx + 1.0) * 127.5).toInt().coerceIn(0, 255)
         val by = ((ny + 1.0) * 127.5).toInt().coerceIn(0, 255)
-        sendToArduino("J,$bx,$by\n")
+        sendToArduino("J,$bx,$by")
     }
 
     private fun sendToArduino(command: String) {
         // 1. Get the list of services from the ConnectionManager
+        val Output = command + "\n"
         val services = ConnectionManager.servicesOnDevice(device)
 
         // 2. Find the specific HM-10 Serial Service
@@ -168,8 +169,8 @@ class Controller : AppCompatActivity() {
         // 3. Find the specific HM-10 Serial Characteristic
         val characteristic = service?.getCharacteristic(UUID.fromString("0000ffe1-0000-1000-8000-00805f9b34fb"))
 
-        characteristic?.let { char ->
-            val bytes = command.toByteArray(Charsets.UTF_8)
+        characteristic?.let {char ->
+            val bytes = Output.toByteArray(Charsets.UTF_8)
             // 4. Send it! The Manager handles the queueing.
             ConnectionManager.writeCharacteristic(device, char, bytes)
         } ?: run {

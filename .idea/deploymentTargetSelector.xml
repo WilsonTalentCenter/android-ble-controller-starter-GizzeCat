@@ -2,7 +2,7 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="app">
+      <SelectionState runConfigName="Coolest Controller">
         <option name="selectionMode" value="DROPDOWN" />
         <DropdownSelection timestamp="2026-04-09T16:16:20.608283700Z">
           <Target type="DEFAULT_BOOT">
